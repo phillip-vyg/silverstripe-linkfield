@@ -59,6 +59,11 @@ class LinkField extends FormField
      */
     private static $sort_column = 'Sort';
 
+    /**
+     * @var string
+     */
+    private $linkConfig;
+
     public function __construct($name, $title, $parent, $linkConfig = array())
     {
         parent::__construct($name, $title, null);
